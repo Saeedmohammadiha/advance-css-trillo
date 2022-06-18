@@ -1,0 +1,22 @@
+{
+  "name": "natoris",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss style.css",
+    "concat": "concat -o css/style.concat.css css/styles.css style.css",
+    "prefix": "postcss --use autoprefixer -b 'last 10 versions' style.css -o css/style.prefix.css",
+    "compres": "node-sass css/style.prefix.css css/style.min.css --output-style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "concat": "^1.0.3",
+    "node-sass": "^7.0.1",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0"
+  }
+}

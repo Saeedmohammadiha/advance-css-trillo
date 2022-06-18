@@ -1,0 +1,60 @@
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-gray-light-2);
+  box-shadow: var(--shadow-dark);
+}
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: 1px solid var(--color-gray-light-2);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content {
+  display: flex;
+}
+
+.sidebar {
+  background-color: var(--color-gray-dark-1);
+
+  //اولی گروه
+  //دومی شرینک
+  //سومی هم فلکس بیسس هست که عرض را تعریف میکند
+  flex: 0 0 18%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-view {
+  background-color: #fff;
+  //اولی گرو
+  flex: 1;
+}
+
+.detail {
+  font-size: 1.4rem;
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-gray-light-1);
+  border-bottom: 1px solid var(--color-gray-light-2);
+}
+.description {
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  
+}
+.user-reviews {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
